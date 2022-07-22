@@ -1,3 +1,7 @@
+const newGame = () => {
+  updateScore(0);
+}
+
 function diceRoll(min, max) {
   min = Math.ceil(1);
   max = Math.floor(7);
