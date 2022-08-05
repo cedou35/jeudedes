@@ -10,10 +10,12 @@
   <meta name="robots" content="index">
   <meta name="robots" content="follow">
 
+  <script src="https://kit.fontawesome.com/a08d50379f.js" crossorigin="anonymous"></script>
+
   <link href="C:\Users\cedou\OneDrive\Bureau\Jeu de dés\src\css\bootstrap.min.css" rel="stylesheet">
   <link href="C:\Users\cedou\OneDrive\Bureau\Jeu de dés\src\css\style.css" rel="stylesheet">
 
-  <script src="https://kit.fontawesome.com/a08d50379f.js" crossorigin="anonymous"></script>
+
 
   <title>Jeu de dés</title>
 </head>
@@ -22,19 +24,28 @@
 </header>
 
 <body>
-  <button onclick="newGame()"><i class="far fa-circle-plus"></i></button>
-  <label>NEW GAME</label>
+  <form>
+    <i class="fa-solid fa-circle-plus"></i>
+    <input id=newGame type="button" value="NEW GAME">
+  </form>
+  <section>
+    <h2 id="player1">PLAYER 1</h2>
+    <p id="scorePlayer1">0</p>
+    <h3>Current</h3>
+    <p id="currentScorePlayer1">0</p>
+  </section>
+  <section>
+    <h2 id="player1">PLAYER 2</h2>
+    <p id="scorePlayer2">0</p>
+    <h3>Current</h3>
+    <p id="currentScorePlayer2">0</p>
+  </section>
+  <button id=rollDice onclick="rollDice()"><i class="fa-solid fa-arrows-rotate"></i></button>
+  <label>ROLL DICE</label>
+  <button id=hold onclick="hold()"><i class="fa-solid fa-rotate"></i></button>
+  <label>HOLD</label>
 
-  <div class="container">
-    <div class="row center">
-      <div class="col">
-        PLAYER 1
-      </div>
-      <div class="col">
-        PLAYER 2
-      </div>
-    </div>
-    <script type="text/javascript" src="src\javascript\app.js"></script>
+  <script src="C:\Users\cedou\OneDrive\Bureau\Jeu de dés\src\javascript\app.js"></script>
 </body>
 
 </html>
